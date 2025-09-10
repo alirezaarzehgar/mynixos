@@ -10,6 +10,7 @@
     feh
     picom
     flameshot
+    pamixer
 
     go
     git
@@ -34,5 +35,6 @@
 
     tree
     pfetch
+    httrack
   ];
 }
