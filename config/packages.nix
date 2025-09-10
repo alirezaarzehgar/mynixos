@@ -11,6 +11,7 @@
     picom
     flameshot
     pamixer
+    xorg.xev
 
     go
     git
