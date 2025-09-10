@@ -51,6 +51,9 @@
     };
   };
 
-  programs.nekoray.tunMode.enable = true;
+  programs.nekoray = {
+    enable = true;
+    tunMode.enable = true;
+  };
   virtualisation.docker.enable = true;
 }
