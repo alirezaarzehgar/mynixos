@@ -27,6 +27,8 @@
     direnv
     nixfmt-classic
     haskell.compiler.ghc8107
+    texliveFull
+    linuxdoc-tools
 
     telegram-desktop
     musikcube
@@ -41,4 +43,8 @@
 
     (pkgs.callPackage ./pkg/iflashc/package.nix { })
   ];
+
+  environment.sessionVariables = {
+    TEXINPUTS = "${pkgs.linuxdoc-tools}//:";
+  };
 }
