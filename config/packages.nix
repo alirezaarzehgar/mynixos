@@ -37,6 +37,7 @@
     tree
     pfetch
     httrack
+    cloc
 
     (pkgs.callPackage ./pkg/iflashc/package.nix { })
   ];
