@@ -28,6 +28,7 @@
     direnv
     nixfmt-classic
     haskell.compiler.ghc8107
+    cabal-install
     texliveFull
     linuxdoc-tools
 
