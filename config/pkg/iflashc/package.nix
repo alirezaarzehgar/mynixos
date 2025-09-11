@@ -18,7 +18,7 @@ buildGoModule rec {
     "-X github.com/alirezaarzehgar/iflashc/cmd.Version=${version}"
   ];
 
-  nativeBuildInputs = [ pkg-config ];
+  nativeBuildInputs = [ pkg-config xclip ];
 
   buildInputs = [
     xorg.libX11
@@ -34,11 +34,14 @@ buildGoModule rec {
     xorg.libXinerama
 
     libGL
-    xclip
   ];
 
   vendorHash = "sha256-x1/4JiPtNTI3KXvhe+RphzN0rQQrRwzq3IyMHXPVZRg=";
   proxyVendor = true;
+
+  postInstall = ''
+    ln -s ${xclip}/bin/xclip $out/bin/xclip
+  '';
 
   meta = with lib; {
     description =
