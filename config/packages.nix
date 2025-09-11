@@ -42,6 +42,8 @@
     pfetch
     httrack
     cloc
+    duf
+    btop
 
     (pkgs.callPackage ./pkg/iflashc/package.nix { })
     (pkgs.callPackage ./pkg/git-llm/package.nix { })
