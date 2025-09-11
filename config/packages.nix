@@ -38,6 +38,6 @@
     pfetch
     httrack
 
-    (pkgs.callPackage ./pkg/iflashc-bin/package.nix { })
+    (pkgs.callPackage ./pkg/iflashc/package.nix { })
   ];
 }
