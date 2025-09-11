@@ -24,6 +24,7 @@
     docker
     k9s
     vscode
+    gedit
     direnv
     nixfmt-classic
     haskell.compiler.ghc8107
