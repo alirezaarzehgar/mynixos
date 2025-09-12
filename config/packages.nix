@@ -33,6 +33,7 @@
     libvirt
     qemu
     docker
+    redis
 
     telegram-desktop
     musikcube
