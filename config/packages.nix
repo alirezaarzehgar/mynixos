@@ -18,11 +18,8 @@
     vim
     wget
     firefox
-    fish
     gcc
     gnumake
-    docker
-    k9s
     vscode
     gedit
     direnv
@@ -33,18 +30,24 @@
     linuxdoc-tools
     nixd
 
+    libvirt
+    qemu
+    docker
+
     telegram-desktop
     musikcube
 
     tor
     nekoray
 
+    fish
     tree
     pfetch
     httrack
     cloc
     duf
     btop
+    k9s
 
     (pkgs.callPackage ./pkg/iflashc/package.nix { })
     (pkgs.callPackage ./pkg/git-llm/package.nix { })
