@@ -1,4 +1,4 @@
-{ config, lib, pkgs, modulesPath, ... }:
+{ pkgs, ... }:
 
 {
   environment.systemPackages = with pkgs; [
@@ -50,7 +50,5 @@
     (pkgs.callPackage ./pkg/git-llm/package.nix { })
   ];
 
-  environment.sessionVariables = {
-    TEXINPUTS = "${pkgs.linuxdoc-tools}//:";
-  };
+  environment.sessionVariables = { TEXINPUTS = "${pkgs.linuxdoc-tools}//:"; };
 }

@@ -1,8 +1,1 @@
-{ ... }:
-
-{
-  imports = [
-    ./config/base.nix
-    ./config/packages.nix
-  ];
-}
+{ imports = [ ./config/base.nix ./config/packages.nix ]; }

@@ -1,7 +1,4 @@
-{ 
-  lib, stdenv, fetchurl, autoPatchelfHook
-  , xorg, libGL, xclip
-}:
+{ lib, stdenv, fetchurl, autoPatchelfHook, xorg, libGL, xclip }:
 
 stdenv.mkDerivation rec {
   pname = "iflashc";
@@ -14,9 +11,7 @@ stdenv.mkDerivation rec {
 
   dontUnpack = true;
 
-  nativeBuildInputs = [
-    autoPatchelfHook
-  ];
+  nativeBuildInputs = [ autoPatchelfHook ];
 
   buildInputs = [
     xorg.libX11

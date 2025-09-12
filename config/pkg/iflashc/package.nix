@@ -1,5 +1,4 @@
-{ lib, stdenv, fetchurl, buildGoModule, fetchFromGitHub, xorg, libGL, xclip
-, pkg-config }:
+{ lib, buildGoModule, fetchFromGitHub, xorg, libGL, xclip, pkg-config }:
 
 buildGoModule rec {
   pname = "iflashc";
