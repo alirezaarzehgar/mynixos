@@ -31,7 +31,7 @@
     cabal-install
     texliveFull
     linuxdoc-tools
-    nil
+    nixd
 
     telegram-desktop
     musikcube
