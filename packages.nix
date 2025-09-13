@@ -14,13 +14,13 @@
     xorg.xev
 
     go
+    gopls
     git
     vim
     wget
     firefox
     gcc
     gnumake
-    vscode
     gedit
     direnv
     nixfmt-classic
@@ -49,6 +49,13 @@
     duf
     btop
     k9s
+
+    (vscode-with-extensions.override {
+      vscodeExtensions = with vscode-extensions; [
+        jnoortheen.nix-ide
+        golang.go
+      ];
+    })
 
     (pkgs.callPackage ./pkg/iflashc/package.nix { })
     (pkgs.callPackage ./pkg/git-llm/package.nix { })
