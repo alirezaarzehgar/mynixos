@@ -28,10 +28,10 @@ cat <<_EOF_ > /etc/nixos/configuration.nix
 _EOF_
 ```
 
-*NOTE*: Look at `config/i3/config` file if cloning repo in `etc` is not good for you.
+*NOTE*: Look at `i3/config` file if cloning repo in `etc` is not good for you.
 Change wallpaper path in following line:
 
 ```plaintext
 # config/i3/config
-exec --no-startup-id feh --bg-scale /etc/mynixos/config/i3/wallpaper.png
+exec --no-startup-id feh --bg-scale /etc/mynixos/i3/wallpaper.png
 ```

@@ -193,7 +193,7 @@ bar {
 default_border pixel 1
 bindsym Print exec flameshot gui
 exec --no-startup-id pulseaudio --start &
-exec --no-startup-id feh --bg-scale /etc/mynixos/config/i3/wallpaper.png
+exec --no-startup-id feh --bg-scale /etc/mynixos/i3/wallpaper.png
 for_window [class="Gnome-terminal"] floating enable
 
 
