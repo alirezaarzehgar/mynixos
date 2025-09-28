@@ -199,3 +199,4 @@ for_window [class="Gnome-terminal"] floating enable
 
 # run xev to find bindcodes
 bindcode 71 exec iflashc # F5
+for_window [class="Netsurf-gtk3"] floating enable

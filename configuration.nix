@@ -47,7 +47,7 @@
     settings.blur = {
       method = "dual_kawase";
       background = true;
-      strength = 5;
+      strength = 1;
     };
   };
 

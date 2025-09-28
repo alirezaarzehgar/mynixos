@@ -28,6 +28,7 @@
     cabal-install
     texliveFull
     linuxdoc-tools
+    poppler-utils
     nixd
 
     libvirt
@@ -37,6 +38,7 @@
 
     telegram-desktop
     musikcube
+    dunst
 
     tor
     nekoray
@@ -49,6 +51,8 @@
     duf
     btop
     k9s
+    jq
+    git-codereview
 
     (vscode-with-extensions.override {
       vscodeExtensions = with vscode-extensions; [
