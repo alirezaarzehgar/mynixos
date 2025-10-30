@@ -17,6 +17,7 @@
     gopls
     git
     vim
+    vscode
     wget
     firefox
     gcc
@@ -30,6 +31,10 @@
     linuxdoc-tools
     poppler-utils
     nixd
+    python3
+    python3Packages.pip
+    python3Packages.setuptools
+    python3Packages.virtualenv
 
     libvirt
     qemu
@@ -53,13 +58,10 @@
     k9s
     jq
     git-codereview
-
-    (vscode-with-extensions.override {
-      vscodeExtensions = with vscode-extensions; [
-        jnoortheen.nix-ide
-        golang.go
-      ];
-    })
+    qrencode
+    pnglatex
+    unzip
+    envsubst
 
     (pkgs.callPackage ./pkg/iflashc/package.nix { })
     (pkgs.callPackage ./pkg/git-llm/package.nix { })
