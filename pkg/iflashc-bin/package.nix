@@ -5,7 +5,7 @@ stdenv.mkDerivation rec {
   version = "1.4.3";
 
   src = fetchurl {
-    url = "https://github.com/alirezaarzehgar/iflashc/v${version}/latest/download/iflashc";
+    url = "https://github.com/alirezaarzehgar/iflashc/releases/download/v${version}/iflashc";
     hash = "sha256-Ao8L/feLdktap1ywxDdfvX/XMRTpU07l4uo7fNsEsHI=";
   };
 
