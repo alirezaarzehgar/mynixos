@@ -12,6 +12,7 @@
     flameshot
     pamixer
     xorg.xev
+    brightnessctl
 
     go
     gopls
@@ -62,8 +63,11 @@
     pnglatex
     unzip
     envsubst
+    nmap
 
-    (pkgs.callPackage ./pkg/iflashc/package.nix { })
+    kicad
+
+    (pkgs.callPackage ./pkg/iflashc-bin/package.nix { })
     (pkgs.callPackage ./pkg/git-llm/package.nix { })
   ];
 
