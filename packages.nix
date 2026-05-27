@@ -36,15 +36,28 @@
     python3Packages.pip
     python3Packages.setuptools
     python3Packages.virtualenv
+    swi-prolog
+    drawio
+    cargo
+    rustup
+    dig
+    man-pages
+    man-pages-posix
 
     libvirt
     qemu
     docker
     redis
+    xorriso
+    grub2
 
     telegram-desktop
     musikcube
     dunst
+    libreoffice
+    kind
+    kubectl
+    helm
 
     tor
     nekoray
@@ -64,8 +77,17 @@
     unzip
     envsubst
     nmap
+    sl
+    fzf
+    gnuplot
+    sshuttle
+    certbot
+    minio-client
+    google-chrome
+    mpv
 
     kicad
+    simulide
 
     (pkgs.callPackage ./pkg/iflashc-bin/package.nix { })
     (pkgs.callPackage ./pkg/git-llm/package.nix { })

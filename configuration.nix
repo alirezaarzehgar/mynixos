@@ -1,7 +1,9 @@
 {
   imports = [ ./packages.nix ];
 
-  boot.loader.grub.device = "/dev/sda";
+  boot.loader.systemd-boot.enable = true;
+  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.efi.efiSysMountPoint = "/boot";
 
   time.timeZone = "Asia/Tehran";
 
